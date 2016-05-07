@@ -1,4 +1,5 @@
 %*******************************************
+% This function was Adapteed from Elliot-Lira's PRsolveZ
 function [Z, A, B,P] = PRsolveZ()
 %Determine the coefficients of the cubic and solve for Z keeping
 %at most two real roots.
