@@ -1,24 +1,28 @@
 %% EASY IMPLEMENT
+% This script implements all the functions and other scripts in this project. It is recommended you use this script when you're just 
+% trying to understand how everything works. These paths should be updated or removed if intend to keep all the files in one folder
 clc, clear all
 
 %% INITIAL AND FINAL PROPERTY CALCULATIONS FOR REAL FLUID
-    addpath(genpath('C:\Users\fuck\Google Drive\A SCHOOL\SPRING16\CHEM THERMO\COMPUTATION CODES\Cubic equation')); %add path to database	
+    addpath(genpath('C:\Users\{update your directory tree}\Cubic equation')); %add path to database	
     
     EOScaller
 
 %% FINAL PROPERTY UNKNOWN FOR REAL FLUID
-addpath(genpath('C:\Users\fuck\Google Drive\A SCHOOL\SPRING16\CHEM THERMO\COMPUTATION CODES\Cubic equation')); %add path to database	
+addpath(genpath('C:\Users\{update your directory tree}\Cubic equation')); %add path to database	
     cubicEOS
 
 %% ENERGY AND ENTROPY BALANCES IDEAL GAS
-addpath(genpath('C:\Users\fuck\Google Drive\A SCHOOL\SPRING16\CHEM THERMO\COMPUTATION CODES\Implementing'))
+addpath(genpath('C:\Users\{update your directory tree}\Implementing'))
     rootCaller
     
 %% SATURATION CONDITIONS
-    addpath(genpath('C:\Users\fuck\Google Drive\A SCHOOL\SPRING16\CHEM THERMO\COMPUTATION CODES\Implementing'));
+    addpath(genpath('C:\Users\{update your directory tree}\Implementing'));
     Saturation
     
 %% PROPERTY ACCESSING BLOCK
+    % This is just for general stuff incase you're thrown a problem that the CP values aren't in props.mat use can modify this file to
+    % solve such problems but you need to understand MatLab workings  to do that
     props = load ('props.mat'); % Loads property data
     props = props.props;
     compounds = props(:,2); % extracts compound names
