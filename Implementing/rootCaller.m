@@ -1,4 +1,6 @@
 %% SCRIPT TO CALL FUNCTIONS 
+% Run this script to use the program. This script abstracts most of things so you don't get confused
+% Just follow the prompts
 clc;clear all
 % if exist('num.mat')
 %     load('num.mat');
