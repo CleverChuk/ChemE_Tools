@@ -1,4 +1,4 @@
-%% SCRIPT TO CALL FUNCTIONS 
+%% THIS SCRIPT IMPLEMENTS ALL THE FUNCTIONS DEFINED IN ENTROPY AND ENERGY BALCE FOLDER
 % Run this script to use the program. This script abstracts most of things so you don't get confused
 % Just follow the prompts
 clc;clear all
