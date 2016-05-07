@@ -1,6 +1,6 @@
 function depatures(Cprop ,T ,P)
-%THIS FUNCTION CALCULATES DEPARTURE PROPERTIES USING 
-%   Detailed explanation goes here
+%THIS FUNCTION CALCULATES DEPARTURE PROPERTIES USING TRUNCATED VIRIAL EOS
+%   This function should not be called directly
 
 if ~isnan(Cprop)
     Tc = Cprop(1); % critical Temperature
