@@ -1,5 +1,5 @@
 %% CUBIC EQUATION OF STATE SOLVER
-% This script does the same thing as cubicEos except that it uses EOS_brute functions 
+% This script does the same thing as cubicEOS except that it uses EOS_brute functions and it does not plot the phase diagram
 clc,clear all
 fprintf('\n')
 disp('Unit of volume depends on the R constant you pick')
