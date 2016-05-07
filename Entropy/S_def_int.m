@@ -3,7 +3,7 @@ function [resp] = S_def_int(A ,B , C, D, P1, P2, a, b, string)
 % equation
 R = 8.314; %[=]J/mol/K
 
-
+%
 % This Block Determines the right equation
 if (strcmpi(string,'CP'))
     
