@@ -1,6 +1,6 @@
 function depatures(Cprop ,T ,P)
 %THIS FUNCTION CALCULATES DEPARTURE PROPERTIES USING TRUNCATED VIRIAL EOS
-%   This function should not be called directly
+%   This function should not be called directly instead use Root2Caller script and run the section you want to use
 
 if ~isnan(Cprop)
     Tc = Cprop(1); % critical Temperature
