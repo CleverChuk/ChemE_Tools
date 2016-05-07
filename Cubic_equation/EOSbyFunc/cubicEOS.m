@@ -1,4 +1,5 @@
 %% CUBIC EQUATION OF STATE SOLVER
+% To use this script just run it and follow the prompt
 clc,clear all
 fprintf('\n')
 disp('Unit of volume depends on the R constant you pick')
