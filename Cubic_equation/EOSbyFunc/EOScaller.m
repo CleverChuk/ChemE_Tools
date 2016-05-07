@@ -1,4 +1,5 @@
 %% CUBIC EQUATION OF STATE SOLVER
+% This script does the same thing as cubicEos except that it uses EOS_brute functions 
 clc,clear all
 fprintf('\n')
 disp('Unit of volume depends on the R constant you pick')
