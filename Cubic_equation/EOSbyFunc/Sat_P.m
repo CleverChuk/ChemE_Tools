@@ -1,6 +1,5 @@
 function Sat_P( Temp, compN )
 %CALCULATES SATURATION PRESSURE AT GIVEN TEMP
-% Pressure is in mmHg
 %Temp in oC
 
 antCoff = load('AntoineTable.mat');
