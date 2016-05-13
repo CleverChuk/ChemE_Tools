@@ -15,11 +15,7 @@ addpath(genpath('C:\Users\{update your directory tree}\Cubic equation')); %add p
 %% ENERGY AND ENTROPY BALANCES IDEAL GAS
 addpath(genpath('C:\Users\{update your directory tree}\Implementing'))
     rootCaller
-    
-%% SATURATION CONDITIONS
-    addpath(genpath('C:\Users\{update your directory tree}\Implementing'));
-    Saturation
-    
+        
 %% GENERIC EQUATION USING FUNCTION HANDLES
 %{
     This is just for general stuff incase you're thrown a problem that the CP values 
