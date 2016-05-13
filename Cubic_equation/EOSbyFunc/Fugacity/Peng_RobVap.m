@@ -64,6 +64,13 @@ clc
     Tr = T./Tc; % Reduced Temperature
 
 %VOLUME AND DENSITY
+%{
+    This script is used to find saturation condition for gases using 
+    Peng-Robinson equation of state
+    
+    Volume range and increment should be modified if you keep getting
+    imaginary data points or no loop.
+%}
         v = [(100:100:10000),(10:10:100),(2:.05:9),(1:.1:1.9),(.5:.001:.99)];%,(.0:.001:.09)];
         v = sort(v,'descend');
         
@@ -118,11 +125,12 @@ for i = 2:length(iArea)
     
 end
 
-
-lnPhi = iArea + (Z - 1) - log(Z);
-F = exp(lnPhi).*P;
-F(1) = P(1);
-
+% NUMERIC SOLUTION
+%=======================
+    lnPhi = iArea + (Z - 1) - log(Z);
+    F = exp(lnPhi).*P;
+    F(1) = P(1);
+%============================
 % ANALYTICAL METHOD
 %=================================================
 A = (a*P)./(R*T).^2; % A Cubic equation coefficient estimation

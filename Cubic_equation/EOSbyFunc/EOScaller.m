@@ -1,5 +1,12 @@
 %% CUBIC EQUATION OF STATE SOLVER
-% This script does the same thing as cubicEOS except that it uses EOS_brute functions and it does not plot the phase diagram
+%{
+This script does the same thing as cubicEOS except that it uses EOS_brute functions and it does not plot the phase diagram
+It also calculates departure properties based on the Given Temperature
+and Pressure. If only a single Temperature/ Pressure point is specified,
+it calculates the departure at the given point with respect to 298.15K
+and 0.1MPa
+Always remember that this program only solves for Virial Departure properties
+%}
 clc,clear all
 fprintf('\n')
 disp('Unit of volume depends on the R constant you pick')

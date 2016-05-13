@@ -1,6 +1,13 @@
 function shortCut( TP, Comp, type )
-% Calcuates Vapor pressure using the shortcut method
+% Calcuates both Vapor pressure and Temperature using the shortcut method
 % pressure is in atm and Temperature in kelvin
+%{ 
+    Usage: 
+        To find P
+        shortCut(373.15,'water','P')
+        To find T
+        shortCut(1,'water','T')
+%}
 
 props = load ('props.mat'); % Loads property data
 props = props.props;
@@ -27,16 +34,15 @@ try
         Tc = Cprop(1); % critical Temperature
         Pc = Cprop(2)*10; % critical Prssure
         w = Cprop(3); % acentric factor
-        Value = Tc*((7+7*w)/((7+7*w)-3*log10(P/Pc)));
+        Value = Tc*((7+7*w)/((7+7*w)-3*log10(P/Pc)));% Saturation temperature
         fprintf('%4.2f [=] K\n',Value)
     end
     
 catch E
    disp(E)
-   disp('Look up property')
-    
+   disp('Look up property')    
 end
 
 
-%end
+
 

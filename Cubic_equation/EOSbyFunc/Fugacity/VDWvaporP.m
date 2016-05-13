@@ -1,4 +1,11 @@
-%% VAPOR PRESSURE USING VAN DER WAALS EOS
+%% VAPOR PRESSURE AND FUGACITY USING VAN DER WAALS EOS
+%{
+    This script is used to find saturation condition for gases using Van
+    Der Waals equation of state
+    
+    Volume range and increment should be modified if you keep getting
+    imaginary data points.
+%}
 clc
 v = [(100:100:1000),(10:10:100),(1:1:10),(.1:.01:.99),(.05:.001:.09)];
 v = sort(v,'descend');

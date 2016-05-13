@@ -3,15 +3,14 @@ Programs for chemical engineering computations.
 
 This is the same PreoProps furnished by Carl Lira for Introductory to Chemical Engineering Thermodynamics;
 
-Recent Fixes By Chuk Ume
+Recent Fixes By Clever
 
-Added Dependencies
-
+Added Dependencies:
             You'll need to have the queryFunc for this program to run without errors
+            You'll need to run PreosPropsMenu.m to properly initialize the UI
 
-Fixes
-
-            Fixed the error that occurs when userObject function is used to guess TnP
+Fixes:
+    Fixed the error that occurs when userObject function is used to guess TnP
             
 This is the current version of the programs for 
 "Introductory Chemical Engineering Thermodynamics"

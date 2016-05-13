@@ -1,6 +1,6 @@
 %% EASY IMPLEMENT
 % This script implements all the functions and other scripts in this project. It is recommended you use this script when you're just 
-% trying to understand how everything works. These paths should be updated or removed if intend to keep all the files in one folder
+% trying to understand how everything works. These paths should be updated or removed if you intend to keep all the files in one folder
 clc, clear all
 
 %% INITIAL AND FINAL PROPERTY CALCULATIONS FOR REAL FLUID
@@ -20,44 +20,14 @@ addpath(genpath('C:\Users\{update your directory tree}\Implementing'))
     addpath(genpath('C:\Users\{update your directory tree}\Implementing'));
     Saturation
     
-%% PROPERTY ACCESSING BLOCK
-    % This is just for general stuff incase you're thrown a problem that the CP values aren't in props.mat use can modify this file to
-    % solve such problems but you need to understand MatLab workings  to do that
-    props = load ('props.mat'); % Loads property data
-    props = props.props;
-    compounds = props(:,2); % extracts compound names
-    
-    Cname = input('Enter compund name or Enter G for generic compounds: ', 'S');
-    Cprop = NaN;
-    if strcmpi(Cname,'G')
-        Tc = input('Enter Critical Temperature: ');
-        Pc = input('Enter Critical Pressure: ');
-        w = input('Acentric factor: ');
-        Mw = input('Molecular weight: ');
-        Cp = input('Cp Values in a matrix')
-        
-    else
-        for i = 1:length(compounds)
-            if strcmpi(compounds(i),Cname)
-                Cprop = props(i,[4 5 6 8 15 16 17 18]);
-                Cprop = cell2mat(Cprop);
-                names =[{'TcK(K)'};{'Pc(Mpa)'};
-                    {'w'};{'Mw(g per mol)'};{'CpA'};{'CpB'};{'CpC'};{'CpD'}];
-                table(names, Cprop')
-                break
-            end
-        end
-    end
-    
-    if ~isnan(Cprop)
-        Tc = Cprop(1); % critical Temperature
-        Pc = Cprop(2); % critical Prssure
-        w = Cprop(3); % acentric factor
-        Mw = Cprop(4); % molar mass
-        Cp = Cprop(1,5:8); % Cp constant
-    end
-    
 %% GENERIC EQUATION USING FUNCTION HANDLES
+%{
+    This is just for general stuff incase you're thrown a problem that the CP values 
+    aren't in props.mat. You can modify this file to
+    solve such problems but you need to understand MatLab workings  to
+    be able do that.
+%}   
+
 R = 8.314;% [=] mpa*cm3/mol/K & J/mol*K
 Rl = 0.08206; % [=] L*atm/mol/K
 

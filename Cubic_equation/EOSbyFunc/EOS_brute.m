@@ -4,7 +4,7 @@ function EOS_brute(Cprop, T,P)
 % VAN DER WAAL EOS
 % IDEAL GAS EOS
 % PENG- ROBINSON EOS
-%   
+% It is a fuctional variation of CubicEos script
 
     
 fprintf('\n-----------------------------------------\n')

@@ -1,3 +1,7 @@
+%{
+    This script is only good for querying the Props.mat data and getting
+    the row number.
+%}
 clc; clear all;
 query = input('Compound name: ','s');
 props = load ('props.mat'); % Loads property data
