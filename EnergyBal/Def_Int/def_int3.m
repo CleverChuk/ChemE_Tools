@@ -1,5 +1,5 @@
 function [resp] = def_int3(A ,B, a, b, string)
-% Calculates the definite intehral of the heat capacity
+% Calculates the definite integral of the heat capacity
 % equation
 R = 8.314; %[=]J/mol/K
 

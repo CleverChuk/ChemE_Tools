@@ -27,9 +27,5 @@ elseif(strcmpi(string,'CV'))
     T = LB; % inittial temperature
     resp2 = resp - subs(resp) + Expr;
     roots = vpa(solve(resp2)); % gets roots
-    
-    
-    
-    
 end
 end
