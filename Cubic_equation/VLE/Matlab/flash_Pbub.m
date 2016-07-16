@@ -29,6 +29,7 @@ opt = optimoptions('fsolve','display','iter','MaxIter',1e3);
     Objective function:
     sum(yi) - 1 == 0
 %}
+init_guess = input('Guess P: ')
 func = @(x) z(1)*Psat1(T)/x + z(2)*Psat2(T)/x - 1; 
 [P] = fzero(func,init_guess,opt); 
 y1 = (z(1)*Psat1(T)/P);
