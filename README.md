@@ -6,3 +6,10 @@
 
 
 ###### These codes and excel sheets are free to use and modify! Please make sure you read the software licence!
+
+#### Usage:
+
+> open up Matlab
+  Make sure the implemented folder is the current directory
+  run rootCaller.m
+  
