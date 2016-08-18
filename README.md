@@ -10,6 +10,6 @@
 #### Usage:
 
 > open up Matlab
-  Make sure the implemented folder is the current directory
-  run rootCaller.m
+> Make sure the implemented folder is the current directory
+> run rootCaller.m
   
